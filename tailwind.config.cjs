@@ -4,7 +4,10 @@ const config = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  daisyui: {
+    themes: ['black']
+  },
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
 
 module.exports = config;
